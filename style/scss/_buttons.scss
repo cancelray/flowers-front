@@ -1,0 +1,12 @@
+@import "__consts.scss";
+
+.catalog-button {
+    background-color: $btns;
+    color: black;
+    font-weight: 700;
+    padding: 18px 51px;
+}
+.catalog-button:hover {
+    background-color: $hover;
+    transition: 1s;
+}

@@ -1,0 +1,27 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.first-look {
+    background: url("../../img/main/first-look/main-img.png") center no-repeat;
+    .container {
+        // background:
+        //     url("../../img/main/first-look/green-img.png") 86.87% 140px no-repeat,
+        //     url("../../img/main/first-look/pink-img.png") 16.67% 527px no-repeat;
+        padding: 230px 0;
+        .catalog-ref {
+            @include flex(column, center, center);
+            margin: 0 auto;
+            .main-logo {
+                font-family: 'Cormorant', serif;
+                font-size: 200px;
+                line-height: 240px;
+                font-weight: 300;
+                text-align: center;
+            }
+            p {
+                color: $white-main;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
