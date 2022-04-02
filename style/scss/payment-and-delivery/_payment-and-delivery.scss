@@ -1,0 +1,207 @@
+@import "../__consts.scss";
+@import "../__mixins.scss";
+
+.payment-and-delivery {
+    .payment-and-delivery-container {
+        background: 
+            url("../../img/payment-and-delivery/flwrs-1.png") right 10px no-repeat,
+            url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
+            url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
+            url("../../img/payment-and-delivery/pink-3.png") 80% 115px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-2.png") left 715px no-repeat,
+            url("../../img/payment-and-delivery/pink-4.png") left 755px no-repeat,
+            url("../../img/payment-and-delivery/pink-5.png") 80% 840px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-3.png") right bottom no-repeat,
+            url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
+            url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
+        padding: 50px 15px 100px 15px;
+        flex-direction: column;
+        .green {
+            color: $main-green;
+        }
+        li {
+            list-style-type: disc;
+            list-style-position: outside;
+            text-transform: uppercase;
+            margin: 5px 0;
+        }
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            color: $pink-main;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+        h2 {
+            line-height: 100px;
+        }
+        .payment-header {
+            margin-left: 200px;
+        }
+        .payment {
+            padding: 100px 160px;
+            @include flex(column);
+            .payment-wrapper {
+                @include flex (row, space-between);
+                max-width: 1110px;
+                width: 100%;
+                flex-wrap: wrap;
+                .payment-item {
+                    @include flex(column, baseline, center);
+                    background: rgba(0, 0, 0, 0.2);
+                    border-radius: 20px;
+                    backdrop-filter: blur(20px);
+                    padding: 50px;
+                    max-width: 255px;
+                    width: 100%;
+                    margin: 30px auto;
+                    p {
+                        text-align: center;
+                        margin-top: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .delivery {
+            .delivery-price {
+                margin-left: 200px;
+                max-width: 500px;
+                width: 100%;
+            }
+            .delivery-terms {
+                padding: 50px 0 0 350px;
+                max-width: 880px;
+                width: 100%;
+                margin-bottom: 100px;
+            }
+        }
+        .delivery-additional {
+            padding: 35px;
+            margin-left: 150px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            max-width: 960px;
+            width: 100%;
+            h4 {
+                margin: 30px 0;
+            }
+            li {
+                text-transform: lowercase;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .payment-and-delivery {
+        .payment-and-delivery-container {
+            .delivery-additional {
+                padding: 15px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .payment-and-delivery {
+        .payment-and-delivery-container {
+            .delivery {
+                .delivery-terms {
+                    padding: 0 30px;
+                    margin: 50px auto;
+                    max-width: 880px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-and-delivery {
+        .payment-and-delivery-container {
+            background: 
+            url("../../img/payment-and-delivery/flwrs-1.png") right 10px no-repeat,
+            url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
+            url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
+            url("../../img/payment-and-delivery/pink-3.png") 80% 115px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-2.png") left 715px no-repeat,
+            url("../../img/payment-and-delivery/pink-4.png") left 755px no-repeat,
+            url("../../img/payment-and-delivery/pink-5.png") 80% 840px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-3.png") right bottom no-repeat,
+            url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
+            url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
+            padding: 20px 15px;
+            p, .green, li, span {
+                font-size: 14px;
+            }
+            h4 {
+                font-size: 16px;
+                line-height: 25px;
+            }
+            h2 {
+                line-height: 50px;
+            }
+            .payment-header {
+                margin-left: 60px;
+            }
+            .payment {
+                padding: 0;
+                margin: 50px auto;
+                @include flex(column);
+                h4 {
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                .payment-wrapper {
+                    .payment-item {
+                        margin: 20px auto;
+                    }
+                }
+            }
+            .delivery {
+                .delivery-price {
+                    padding: 0 20px;
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+                .delivery-terms {
+                    padding: 0 20px;
+                    margin: 0 auto;
+                    max-width: 500px;
+                }
+            }
+            .delivery-additional {
+                padding: 35px;
+                margin: 0 auto;
+                max-width: 500px;
+                h4 {
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .payment-and-delivery {
+        .payment-and-delivery-container {
+            background: 
+            url("../../img/payment-and-delivery/flwrs-1-mobile.png") right 10px no-repeat,
+            url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
+            url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
+            url("../../img/payment-and-delivery/pink-3.png") 80% 115px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-2-mobile.png") left 715px no-repeat,
+            url("../../img/payment-and-delivery/pink-4.png") left 755px no-repeat,
+            url("../../img/payment-and-delivery/pink-5.png") 80% 840px no-repeat,
+            url("../../img/payment-and-delivery/flwrs-3-mobile.png") right bottom no-repeat,
+            url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
+            url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
+        }
+    }
+}
+  

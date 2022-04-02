@@ -1,0 +1,117 @@
+@import "../__consts.scss";
+@import "../__mixins.scss";
+
+.about {
+    .about-container {
+        background: 
+            url("../../img/about/flwrs-1.png") left 10px no-repeat,
+            url("../../img/about/flwrs-2.png") right 10px no-repeat,
+            url("../../img/about/yellow-1.png") left 10px no-repeat,
+            url("../../img/about/yellow-2.png") 80% 60px no-repeat,
+            url("../../img/about/yellow-3.png") 10% 415px no-repeat,
+            url("../../img/about/flwrs-3.png") right 300px no-repeat,
+            url("../../img/about/yellow-4.png") left 1000px no-repeat,
+            url("../../img/about/yellow-5.png") right bottom no-repeat;
+
+        flex-direction: column;
+        padding: 30px 0 100px 0;
+        h2 {
+            margin-left: 150px;
+        }
+        .about-item {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            max-width: 900px;
+            width: 100%;
+            padding: 50px;
+            h5 {
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 26px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+        }
+        .first-item {
+            margin-left: auto;
+            margin-bottom: 60px;
+        }
+        h3 {
+            color: $main-green;
+            font-family: "Cormorant", sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+            line-height: 64px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .second-item {
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
+        .third-item {
+            margin-left: auto;
+            margin-bottom: 100px;
+            li {
+                list-style-type: disc;
+                list-style-position: outside;
+                margin: 5px 0;
+            }
+        }
+        .page-end {
+            color: $white-main;
+            max-width: 1000px;
+            width: 100%;
+            text-align: left;
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        .about-container {
+            padding: 30px 0 50px 0;
+            h2 {
+                margin: 0 auto;
+            }
+            .about-item {
+                margin: 0 auto;
+            }
+            .first-item {
+                margin-left: 0;
+                margin-bottom: 0;
+            }
+            h3 {
+                margin: 0 auto;
+            }
+            .second-item {
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            .third-item {
+                margin: 0 auto;
+                margin-bottom: 50px;
+            }
+            .page-end {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .about {
+        .about-container {
+            p {
+                font-size: 14px;
+            }
+            h3 {
+             font-size: 30px;       
+            }
+        }
+    }
+}
