@@ -1,0 +1,27 @@
+@import "__consts.scss";
+
+.error {
+    .container {
+        max-width: 1800px;
+        background: 
+            url("../../img/404/0.png") 40% 193px no-repeat,
+            url("../../img/404/4.png") 57% 10px no-repeat,
+            url("../../img/404/404-main.png") 20% -83px no-repeat,
+            url("../../img/404/4.png") 20% 6px no-repeat;
+        .back {
+            margin-left: auto;
+            padding: 500px 300px;
+            text-transform: uppercase;
+            p {
+                margin: 20px 0;
+            }
+            a {
+                color: $main-green;
+            }
+            a:hover {
+                color: $hover;
+                transition: 0.7s all;
+            }
+        }
+    }
+}

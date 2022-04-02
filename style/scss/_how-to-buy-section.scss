@@ -1,0 +1,76 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.how-to-buy-section {
+    .container {
+        background: 
+            url("../../img/main/how-to-buy-section/green-ellipse.png") 100% -35px no-repeat,
+            url("../../img/main/how-to-buy-section/buy-main-bg.png") left top no-repeat;
+        padding: 40px 0;
+        .how-to-buy {
+            margin-left: auto;
+            max-width: 750px;
+            width: 100%;
+            .steps {
+                @include flex(column);
+                flex-wrap: wrap;
+                height: 700px;
+                .step {
+                    margin-bottom: 50px;
+                    h3 {
+                        font-size: 30px;
+                        line-height: 44px;
+                        font-weight: 700;
+                        color: $pink-main;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        max-width: 240px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .how-to-buy-section {
+        .container {
+            background: url("../../img/main/how-to-buy-section/buy-main-bg.png") left top no-repeat;
+            .how-to-buy {
+                h2 {
+                    text-align: center;
+                }
+                .steps {
+                    margin: 0 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .how-to-buy-section {
+        .container {
+            .how-to-buy {
+                h2 {
+                    @include header-mob();
+                }
+                .steps {
+                    height: auto;
+                    .step {
+                        h3 {
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                        p {
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

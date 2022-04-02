@@ -1,0 +1,80 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.custom-form-section {
+    .container {
+        background: 
+            url("../../img/main/custom-form-section/custom-pink.png") -30% 170px no-repeat,
+            url("../../img/main/custom-form-section/custom-green.png") 23% 320px no-repeat,
+            url("../../img/main/custom-form-section/custom-form-main-bg.png") -100% -240px no-repeat,
+            $custom-bg;
+        flex-direction: column;
+        padding: 100px 0;
+        .special {
+            margin: 0 auto;
+        }
+        .occasion {
+            margin-left: auto;
+            margin-right: 300px;
+        }
+        .custom-form {
+            margin-left: auto;
+            margin-right: 50px;
+            max-width: 700px;
+            width: 100%;
+            p {
+                max-width: 500px;
+                width: 100%;
+                padding: 20px 0;
+            }  
+            .confidentiality {
+                font-size: 14px;
+                a {
+                    color: $main-green;
+                    text-decoration: underline;
+                }
+                a:hover {
+                    color: $hover;
+                    transition: 0.7s all;
+                }
+            }        
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .custom-form-section {
+        .container {
+            background: 
+                url("../../img/main/custom-form-section/custom-pink.png") 0 -170px no-repeat,
+                url("../../img/main/custom-form-section/custom-green.png") 33% 420px no-repeat,
+                $custom-bg;
+            .special {
+                margin: 0 auto;
+            }
+            .occasion {
+                margin: 0 auto;
+            }
+            .custom-form {
+                margin: 0 auto;       
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-form-section {
+        .container {
+            .custom-form {
+                p {
+                    font-size: 14px;
+                    padding: 20px;
+                }  
+                .confidentiality {
+                    font-size: 12px;
+                    padding: 0 10px;
+                }        
+            }
+        }
+    }
+}

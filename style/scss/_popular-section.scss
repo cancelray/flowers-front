@@ -1,0 +1,114 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.popular-section {
+    .container {
+        flex-direction: column;
+        padding: 0 0 200px 0;
+        background: 
+            url("../../img/main/popular-section/popular-green.png") 10% -100px no-repeat,
+            url("../../img/main/popular-section/popular-pink.png") 80% 100px no-repeat,
+            url("../../img/main/popular-section/popular-main.png") right top no-repeat;
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        .slider-wrapper {
+            margin: 100px auto;
+            max-width: 986px;
+            width: 100%;
+            @include flex(row, space-between, center);
+            .slider-left:hover, .slider-right:hover {
+                cursor: pointer;
+            }
+            .disable:hover {
+                cursor: auto;
+            }
+            .slider-content {
+                max-width: 826px;
+                width: 100%;
+                overflow: hidden;
+                .slider-track {
+                    transition: 2s all;
+                    @include flex(row, space-between);
+                    .slider-item {
+                        margin: 0 10px;
+                        flex-shrink: 0;
+                        img {
+                            margin-bottom: 10px;
+                        }
+                        h4 {
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+                        }
+                        p {
+                            margin-bottom: 10px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        a {
+            margin-left: 200px;
+            color: $main-green;
+            text-decoration: underline;
+            transition: 0.7s;
+        }
+        a:hover {
+            color: $hover;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .popular-section {
+        .container {
+            padding: 0 0 150px 0;
+            .slider-wrapper {
+                .slider-left, .slider-right {
+                    width: 40px;
+                }
+                .slider-content {
+                    max-width: 626px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .popular-section {
+        .container {
+            flex-direction: column;
+            padding: 0 0 200px 0;
+            background: 
+                url("../../img/main/popular-section/popular-green.png") 0 50px no-repeat,
+                url("../../img/main/popular-section/popular-pink.png") 80% 220px no-repeat;
+            p {
+                font-size: 14px;
+            }
+            .slider-wrapper {
+                margin: 70px auto;
+                max-width: 300px;
+                .slider-left, .slider-right {
+                    width: 23px;
+                }
+                .slider-content {
+                    max-width: 275px;
+                    margin: 0 15px;
+                    .slider-track {
+                        .slider-item {
+                            margin: 3px auto;
+                        }
+                    }
+                }
+            }
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+}

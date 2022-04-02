@@ -2,11 +2,41 @@
 
 .catalog-button {
     background-color: $btns;
-    color: black;
+    color: $main-bg;
     font-weight: 700;
     padding: 18px 51px;
 }
 .catalog-button:hover {
     background-color: $hover;
-    transition: 1s;
+    transition: 1s all;
+}
+
+.add-to-cart-btn {
+    max-width: 220px;
+    width: 100%;
+    padding: 20px 80px;
+    border: 0.5px solid $white-main;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.add-to-cart-btn:hover {
+    cursor: pointer;
+    background-color: $btns;
+    color: $main-bg;
+    transition: 1s all;
+}
+
+.custom-form-btn {
+    background-color: $btns;
+    color: $main-bg;
+    font-weight: 700;
+    padding: 10px 45px;
+    max-width: 230px;
+    width: 100%;
+}
+.custom-form-btn:hover {
+    background-color: $hover;
+    transition: 1s all;
 }

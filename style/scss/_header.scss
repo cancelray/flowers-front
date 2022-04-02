@@ -25,7 +25,7 @@
         }
         a:hover {
             color: $hover;
-            transition: 0.6s;
+            transition: 0.6s all;
         }
         .navigation {
             max-width: 600px;
@@ -39,32 +39,45 @@
             }
         }
     }
-}
-
-
-@media (max-width: 1200px) {
-  .header {
-
-  }
-  .header .container {
-
-  }
+    .mobile-header {
+        display: none;
+    }
 }
 
 @media (max-width: 992px) {
-  .header {
-
-  }
-  .header .container {
-
-  }
+    .header {
+        .container {
+            font-size: 12px;
+            line-height: 18px;
+            .navigation {
+                max-width: 300px;
+            }
+        }
+        .mobile-header {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 768px) {
-  .header {
+    .header {
+        .mobile-header {
+            display: flex;
+        }
+        .container {
+            .mobile-menu {
+                height: 11px;
+                @include flex(column, space-between);
+                .menu-item {
+                    width: 20px;
+                    height: 1px;
+                    background-color: $btns;
+                }
+            }
+        }
+    }
 
-  }
-  .header .container {
-
-  }
+    .desc-header {
+        display: none;
+    }
 }

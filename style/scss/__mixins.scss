@@ -4,3 +4,17 @@
 	justify-content: $justify;
 	align-items: $align;
 }
+
+@mixin header-desc() {
+	font-family: 'Cormorant', serif;
+	font-size: 100px;
+	line-height: 140px;
+	font-weight: 300;
+	text-transform: uppercase;
+	
+}
+
+@mixin header-mob() {
+	font-size: 40px;
+    line-height: 50px;
+}

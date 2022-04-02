@@ -1,21 +1,38 @@
-const chooseDish = document.querySelectorAll('.switch');
+"use strict";
 
-Array.from(chooseDish).forEach(elem => elem.onclick = () => { 
-    if(elem.classList.contains('choose-dish')) {
-        elem.classList.remove('choose-dish');
-        elem.classList.add('chosen-dish');
-
-        elem.childNodes[1].style.display = 'none';
-        elem.childNodes[5].style.display = 'flex';
-        elem.childNodes[3].classList.remove('choose-text');
-        elem.childNodes[3].classList.add('chosen-text');
-    } else {
-        elem.classList.remove('chosen-dish');
-        elem.classList.add('choose-dish');
-
-        elem.childNodes[1].style.display = 'flex';
-        elem.childNodes[5].style.display = 'none';
-        elem.childNodes[3].classList.remove('chosne-text');
-        elem.childNodes[3].classList.add('choose-text');
+const sliderMove = (click) => {
+    let target = click.target;
+    if(target.classList.contains('disable')) {
+        return;
     }
- });
+    if(target.classList.contains('slider-right')) {
+        transformSlider -= 275;
+        currentIndex++;
+        sliderTrack.style.transform=`translateX(${transformSlider}px)`;
+        if(prevArrow.classList.contains('disable')) {
+            prevArrow.classList.remove('disable');
+        }
+        if(picsArr[currentIndex + 1] === picsArr[length - 1]) {
+            nextArrow.classList.add('disable');
+        }
+    }
+    if(target.classList.contains('slider-left')) {
+        transformSlider += 275;
+        currentIndex--;
+        sliderTrack.style.transform=`translateX(${transformSlider}px)`;
+        if(nextArrow.classList.contains('disable')) {
+            nextArrow.classList.remove('disable');
+        }
+        if(picsArr[currentIndex] === picsArr[0]) {
+            prevArrow.classList.add('disable');
+        }
+    }
+}
+const picsArr = document.querySelectorAll('.slider-img');
+const prevArrow = document.querySelector('.slider-left');
+const nextArrow = document.querySelector('.slider-right');
+const sliderTrack = document.querySelector('.slider-track');
+let transformSlider = 0;
+let currentIndex = 1;
+nextArrow.addEventListener('click', sliderMove);
+prevArrow.addEventListener('click', sliderMove);

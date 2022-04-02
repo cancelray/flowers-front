@@ -1,0 +1,154 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.catalog-section {
+    .container {
+        flex-direction: column;
+        background: 
+            url("../../img/main/catalog-section/pink-ellipse.png") 0 280px no-repeat,
+            url("../../img/main/catalog-section/green-ellipse.png") right 200px no-repeat;
+        padding: 120px 0 100px 0;
+        h2 {
+            margin-left: 150px;
+        }
+        .catalogs-links {
+            @include flex(row, space-between);
+            flex-wrap: wrap;
+            .catalog-item {
+                padding: 40px;
+                background: rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(20px);
+                border-radius: 20px;
+                max-width: 500px;
+                width: 100%;
+                h3 {
+                    color: $main-green;
+                    font-weight: 700;
+                    line-height: 40px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+                p {
+                    margin-bottom: 50px;
+                }
+                ul {
+                    margin-bottom: 50px;
+                    li {
+                        list-style-type: disc;
+                        list-style-position: inside;
+                    }
+                }
+                a {
+                    color: $main-green;
+                    text-decoration: underline;
+                    transition: 0.7s;
+                }
+                a:hover {
+                    color: $hover;
+                }
+            }
+            .desc {
+                margin: 10px 40px 120px 50px;
+                max-width: 800px;
+            }
+            .dried {
+                margin-top: 100px;
+                margin-bottom: 60px;
+            }
+            .flwrs {
+                margin-left: 150px;
+            }
+            .add {
+                margin-right: 190px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .catalog-section {
+        .container {
+            .catalogs-links {
+                .catalog-item {
+                    padding: 20px;
+                    max-width: 300px;
+                    h3 {
+                        font-size: 25px;
+                        line-height: 35px;
+                    }
+                    p {
+                        margin-bottom: 30px;
+                    }
+                    ul {
+                        margin-bottom: 30px;
+                    }
+                }
+                .desc {
+                    margin: 10px 40px 30px 50px;
+                    max-width: 800px;
+                }
+                .dried {
+                    margin-top: 70px;
+                    margin-bottom: 60px;
+                    margin-left: 100px;
+                }
+                .flwrs {
+                    margin-left: 290px;
+                    margin-bottom: 30px;
+                }
+                .add {
+                    margin-left: 190px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .catalog-section {
+        .container {
+            padding: 50px 0 40px 0;
+            h2 {
+                margin: 0 auto;
+            }
+            .catalogs-links {
+                .catalog-item {
+                    h3 {
+                        color: $main-green;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    p {
+                        margin-bottom: 30px;
+                    }
+                    ul {
+                        margin-bottom: 30px;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                    a {
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
+                .desc {
+                    margin: 20px auto;
+                    max-width: 800px;
+                }
+                .dried {
+                    margin: 30px auto;
+                }
+                .flwrs {
+                    margin: 0 auto;
+                }
+                .add {
+                    margin: 20px auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+}
