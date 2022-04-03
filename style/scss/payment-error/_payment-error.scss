@@ -1,0 +1,79 @@
+.payment-error {
+    .container {
+        flex-direction: column;
+        background: 
+            url("../../img/payment-error/flwrs.png") right bottom no-repeat,
+            url("../../img/payment-error/pink-1.png") right top no-repeat,
+            url("../../img/payment-error/pink-2.png") left bottom no-repeat,
+            url("../../img/payment-error/pink-3.png") right 380px no-repeat;
+        padding: 100px 0 300px 15px;
+        .payment {
+            margin-left: 300px;
+        }
+        .payment-error-wrapper {
+            max-width: 500px;
+            width: 100%;
+            margin: 50px 150px;
+            .buttons-wrapper {
+                margin-top: 50px;
+            }
+            .back {
+                margin-left: 50px;
+                color: $main-green;
+                text-decoration: underline;
+            }
+            .back:hover {
+                color: $hover;
+                transition: 0.8s all;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .payment-error {
+        .container {
+            background: 
+                url("../../img/payment-error/flwrs.png") right -100px no-repeat,
+                url("../../img/payment-error/pink-1.png") right top no-repeat,
+                url("../../img/payment-error/pink-2.png") left bottom no-repeat,
+                url("../../img/payment-error/pink-3.png") right 380px no-repeat;
+            .error {
+                margin: 0 auto;
+            }
+            .payment {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-error {
+        .container {
+            flex-direction: column;
+            background: 
+                url("../../img/payment-error/flwrs.png") right bottom no-repeat,
+                url("../../img/payment-error/pink-1.png") right top no-repeat,
+                url("../../img/payment-error/pink-2.png") left bottom no-repeat,
+                url("../../img/payment-error/pink-3.png") right 380px no-repeat;
+            padding: 150px 15px 250px 15px;
+            .payment-error-wrapper {
+                margin: 0 auto;
+                .buttons-wrapper {
+                    @include flex(column, center, center);
+                    text-align: center;
+                    margin-top: 25px;
+                }
+                p {
+                    text-align: center;
+                }
+                .back {
+                    margin-left: 0px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,78 @@
+@import "../__mixins.scss";
+@import "../__consts.scss";
+
+.payment-success {
+    .container {
+        flex-direction: column;
+        background: 
+            url("../../img/payment-success/flwrs.png") right bottom no-repeat,
+            url("../../img/payment-success/green-1.png") left top no-repeat,
+            url("../../img/payment-success/pink-1.png") right top no-repeat,
+            url("../../img/payment-success/green-2.png") right 600px no-repeat,
+            url("../../img/payment-success/pink-2.png") left 500px no-repeat;
+        padding: 100px 0 300px 15px;
+        .success {
+            margin: 0 auto;
+        }
+        .payment-success-wrapper {
+            max-width: 500px;
+            width: 100%;
+            margin: 50px 150px;
+            .number {
+                margin-bottom: 60px;
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            a {
+                color: $main-green;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: $hover;
+                transition: 0.8s all;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .payment-success {
+        .container {
+            background: 
+                url("../../img/payment-success/flwrs.png") right 500px no-repeat,
+                url("../../img/payment-success/green-1.png") left top no-repeat,
+                url("../../img/payment-success/pink-1.png") right top no-repeat,
+                url("../../img/payment-success/green-2.png") right 600px no-repeat,
+                url("../../img/payment-success/pink-2.png") left 500px no-repeat;
+            padding: 100px 0;
+            .payment {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-success {
+        .container {
+            background: 
+                url("../../img/payment-success/flwrs-mobile.png") right bottom no-repeat,
+                url("../../img/payment-success/green-1.png") left top no-repeat,
+                url("../../img/payment-success/pink-1.png") right top no-repeat,
+                url("../../img/payment-success/green-2.png") right 600px no-repeat,
+                url("../../img/payment-success/pink-2.png") left 500px no-repeat;
+            padding: 100px 0 150px 0;
+            .payment {
+                margin: 0 auto;
+                text-align: center;
+            }
+            .payment-success-wrapper {
+                padding: 15px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+}

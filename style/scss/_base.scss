@@ -36,6 +36,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    p, h3, h6, a {
+        font-size: 14px;
+        line-height: 26px;
+    }
     h2 {
       @include header-mob;
     }

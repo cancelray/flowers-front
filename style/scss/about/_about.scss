@@ -2,7 +2,7 @@
 @import "../__mixins.scss";
 
 .about {
-    .about-container {
+    .container {
         background: 
             url("../../img/about/flwrs-1.png") left 10px no-repeat,
             url("../../img/about/flwrs-2.png") right 10px no-repeat,
@@ -12,11 +12,13 @@
             url("../../img/about/flwrs-3.png") right 300px no-repeat,
             url("../../img/about/yellow-4.png") left 1000px no-repeat,
             url("../../img/about/yellow-5.png") right bottom no-repeat;
-
         flex-direction: column;
-        padding: 30px 0 100px 0;
+        padding: 50px 0 100px 0;
         h2 {
             margin-left: 150px;
+        }
+        h6 {
+            margin-left: 15px;
         }
         .about-item {
             background: rgba(0, 0, 0, 0.2);
@@ -72,7 +74,7 @@
 
 @media (max-width: 768px) {
     .about {
-        .about-container {
+        .container {
             padding: 30px 0 50px 0;
             h2 {
                 margin: 0 auto;
@@ -105,7 +107,7 @@
 
 @media (max-width: 540px) {
     .about {
-        .about-container {
+        .container {
             p {
                 font-size: 14px;
             }
