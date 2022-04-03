@@ -2,12 +2,12 @@
 @import "../__consts.scss";
 
 .first-look {
+    padding: 230px 0;
+    background: 
+        url("../../img/main/first-look/green.png") -10% 122px no-repeat,
+        url("../../img/main/first-look/pink-img.png") right 60px no-repeat,
+        url("../../img/main/first-look/main-img.png") center/cover no-repeat;
     .container {
-        padding: 230px 0;
-        background: 
-            url("../../img/main/first-look/green.png") -41% 122px no-repeat,
-            url("../../img/main/first-look/pink-img.png") 80% 70px no-repeat,
-            url("../../img/main/first-look/main-img.png") center no-repeat;
         .catalog-ref {
             @include flex(column, center, center);
             margin: 0 auto;
@@ -28,12 +28,12 @@
 
 @media (max-width: 992px) {
     .first-look {
+        background: 
+            url("../../img/main/first-look/green-img.png") 0 100px no-repeat,
+            url("../../img/main/first-look/pink-img.png") 95% 150px no-repeat,
+            url("../../img/main/first-look/main-img.png") center/cover no-repeat;
         .container {
             padding: 200px 0;
-            background: 
-                url("../../img/main/first-look/green-img.png") 0 100px no-repeat,
-                url("../../img/main/first-look/pink-img.png") 95% 150px no-repeat,
-                url("../../img/main/first-look/main-img.png") center no-repeat;
             .catalog-ref {
                 .main-logo {
                     font-size: 150px;
@@ -49,12 +49,12 @@
 
 @media (max-width: 768px) {
     .first-look {
+        background: 
+            url("../../img/main/first-look/mobile-green-img.png") -45% 100px no-repeat,
+            url("../../img/main/first-look/mobile-pink-img.png") 110% 300px no-repeat,
+            url("../../img/main/first-look/main-mobile.png") center/cover no-repeat;
         .container {
-            padding: 40px 0;
-            background: 
-                url("../../img/main/first-look/mobile-green-img.png") 0 160px no-repeat,
-                url("../../img/main/first-look/mobile-pink-img.png") 95% 30px no-repeat,
-                url("../../img/main/first-look/main-mobile.png") center no-repeat;
+            padding: 0;
             .catalog-ref {
                 .main-logo {
                     font-size: 50px;

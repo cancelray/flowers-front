@@ -2,14 +2,14 @@
 @import "../__mixins.scss";
 
 .faq {
+    background: 
+        url("../../img/faq/flwrs.png") right top no-repeat,
+        url("../../img/faq/blue-1.png") left top no-repeat,
+        url("../../img/faq/blue-2.png") right top no-repeat,
+        url("../../img/faq/blue-3.png") left bottom no-repeat,
+        url("../../img/faq/blue-4.png") right bottom no-repeat;
     .container {
         flex-direction: column;
-        background: 
-            url("../../img/faq/flwrs.png") right top no-repeat,
-            url("../../img/faq/blue-1.png") left top no-repeat,
-            url("../../img/faq/blue-2.png") right top no-repeat,
-            url("../../img/faq/blue-3.png") left bottom no-repeat,
-            url("../../img/faq/blue-4.png") right bottom no-repeat;
         padding: 50px 0 100px 0;
         .display-none {
             display: none;
@@ -63,14 +63,11 @@
 
 @media (max-width: 470px) {
     .faq {
-        .container {
-            flex-direction: column;
-            background: 
-                url("../../img/faq/flwrs-mobile.png") right top no-repeat,
-                url("../../img/faq/blue-1.png") left top no-repeat,
-                url("../../img/faq/blue-2.png") right top no-repeat,
-                url("../../img/faq/blue-3.png") left bottom no-repeat,
-                url("../../img/faq/blue-4.png") right bottom no-repeat;
-        }
+        background: 
+            url("../../img/faq/flwrs-mobile.png") right top no-repeat,
+            url("../../img/faq/blue-1.png") left top no-repeat,
+            url("../../img/faq/blue-2.png") right top no-repeat,
+            url("../../img/faq/blue-3.png") left bottom no-repeat,
+            url("../../img/faq/blue-4.png") right bottom no-repeat;
     }
 }

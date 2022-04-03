@@ -2,16 +2,16 @@
 @import "../__mixins.scss";
 
 .about {
+    background: 
+        url("../../img/about/flwrs-1.png") left 10px no-repeat,
+        url("../../img/about/flwrs-2.png") right 10px no-repeat,
+        url("../../img/about/yellow-1.png") left 10px no-repeat,
+        url("../../img/about/yellow-2.png") 80% 60px no-repeat,
+        url("../../img/about/yellow-3.png") 10% 415px no-repeat,
+        url("../../img/about/flwrs-3.png") right 300px no-repeat,
+        url("../../img/about/yellow-4.png") left 1000px no-repeat,
+        url("../../img/about/yellow-5.png") right bottom no-repeat;
     .container {
-        background: 
-            url("../../img/about/flwrs-1.png") left 10px no-repeat,
-            url("../../img/about/flwrs-2.png") right 10px no-repeat,
-            url("../../img/about/yellow-1.png") left 10px no-repeat,
-            url("../../img/about/yellow-2.png") 80% 60px no-repeat,
-            url("../../img/about/yellow-3.png") 10% 415px no-repeat,
-            url("../../img/about/flwrs-3.png") right 300px no-repeat,
-            url("../../img/about/yellow-4.png") left 1000px no-repeat,
-            url("../../img/about/yellow-5.png") right bottom no-repeat;
         flex-direction: column;
         padding: 50px 0 100px 0;
         h2 {

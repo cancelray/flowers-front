@@ -2,12 +2,12 @@
 @import "../__consts.scss";
 
 .custom-form-section {
+    background: 
+        url("../../img/main/custom-form-section/custom-pink.png") -20% 380px no-repeat,
+        url("../../img/main/custom-form-section/custom-green.png") 110% 320px no-repeat,
+        url("../../img/main/custom-form-section/custom-form-main-bg.png") -20% -200px no-repeat,
+        $custom-bg;
     .container {
-        background: 
-            url("../../img/main/custom-form-section/custom-pink.png") -30% 170px no-repeat,
-            url("../../img/main/custom-form-section/custom-green.png") 23% 320px no-repeat,
-            url("../../img/main/custom-form-section/custom-form-main-bg.png") -100% -240px no-repeat,
-            $custom-bg;
         flex-direction: column;
         padding: 100px 0;
         .special {
@@ -44,11 +44,11 @@
 
 @media (max-width: 992px) {
     .custom-form-section {
+        background: 
+            url("../../img/main/custom-form-section/custom-pink.png") 0 -200px no-repeat,
+            url("../../img/main/custom-form-section/custom-green.png") 100% 620px no-repeat,
+            $custom-bg;
         .container {
-            background: 
-                url("../../img/main/custom-form-section/custom-pink.png") 0 -170px no-repeat,
-                url("../../img/main/custom-form-section/custom-green.png") 33% 420px no-repeat,
-                $custom-bg;
             .special {
                 margin: 0 auto;
             }

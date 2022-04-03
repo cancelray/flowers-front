@@ -2,13 +2,13 @@
 @import "../__mixins.scss";
 
 .contacts {
+    background: 
+        url("../../img/contacts/flwrs.png") right top no-repeat,
+        url("../../img/contacts/red-1.png") left top no-repeat,
+        url("../../img/contacts/red-2.png") right top no-repeat,
+        url("../../img/contacts/red-3.png") 10% 15px no-repeat;
     .container {
         flex-direction: column;
-        background: 
-            url("../../img/contacts/flwrs.png") right top no-repeat,
-            url("../../img/contacts/red-1.png") left top no-repeat,
-            url("../../img/contacts/red-2.png") right top no-repeat,
-            url("../../img/contacts/red-3.png") 10% 15px no-repeat;
         padding: 50px 15px;
         h2 {
             margin: 0 auto;
@@ -54,13 +54,9 @@
 
 @media (max-width: 455px) {
     .contacts {
-        .container {
-            flex-direction: column;
             background: 
-                url("../../img/contacts/flwrs-mobile.png") right top no-repeat,
-                url("../../img/contacts/red-1.png") left top no-repeat,
-                url("../../img/contacts/red-2.png") right top no-repeat,
-                url("../../img/contacts/red-3.png") 10% 15px no-repeat;
-        }
+            url("../../img/contacts/flwrs-mobile.png") right top no-repeat,
+            url("../../img/contacts/red-1.png") left top no-repeat,
+            url("../../img/contacts/red-3.png") 10% 385px no-repeat;
     }
 }

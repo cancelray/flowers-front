@@ -2,18 +2,18 @@
 @import "../__mixins.scss";
 
 .payment-and-delivery {
+    background: 
+        url("../../img/payment-and-delivery/flwrs-1.png") right 10px no-repeat,
+        url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
+        url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
+        url("../../img/payment-and-delivery/pink-3.png") 80% 115px no-repeat,
+        url("../../img/payment-and-delivery/flwrs-2.png") left 715px no-repeat,
+        url("../../img/payment-and-delivery/pink-4.png") left 755px no-repeat,
+        url("../../img/payment-and-delivery/pink-5.png") 80% 840px no-repeat,
+        url("../../img/payment-and-delivery/flwrs-3.png") right bottom no-repeat,
+        url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
+        url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
     .container {
-        background: 
-            url("../../img/payment-and-delivery/flwrs-1.png") right 10px no-repeat,
-            url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
-            url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
-            url("../../img/payment-and-delivery/pink-3.png") 80% 115px no-repeat,
-            url("../../img/payment-and-delivery/flwrs-2.png") left 715px no-repeat,
-            url("../../img/payment-and-delivery/pink-4.png") left 755px no-repeat,
-            url("../../img/payment-and-delivery/pink-5.png") 80% 840px no-repeat,
-            url("../../img/payment-and-delivery/flwrs-3.png") right bottom no-repeat,
-            url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
-            url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
         padding: 50px 15px 100px 15px;
         flex-direction: column;
         .green {
@@ -123,8 +123,7 @@
 
 @media (max-width: 768px) {
     .payment-and-delivery {
-        .container {
-            background: 
+        background: 
             url("../../img/payment-and-delivery/flwrs-1.png") right 10px no-repeat,
             url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
             url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
@@ -135,6 +134,7 @@
             url("../../img/payment-and-delivery/flwrs-3.png") right bottom no-repeat,
             url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
             url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
+        .container {
             padding: 20px 15px;
             p, .green, li, span {
                 font-size: 14px;
@@ -189,8 +189,7 @@
 
 @media (max-width: 540px) {
     .payment-and-delivery {
-        .container {
-            background: 
+        background: 
             url("../../img/payment-and-delivery/flwrs-1-mobile.png") right 10px no-repeat,
             url("../../img/payment-and-delivery/pink-1.png") right 0 no-repeat,
             url("../../img/payment-and-delivery/pink-2.png") 5% 50px no-repeat,
@@ -201,7 +200,6 @@
             url("../../img/payment-and-delivery/flwrs-3-mobile.png") right bottom no-repeat,
             url("../../img/payment-and-delivery/pink-6.png") left 1755px no-repeat,
             url("../../img/payment-and-delivery/pink-7.png") right 1600px no-repeat;
-        }
     }
 }
   

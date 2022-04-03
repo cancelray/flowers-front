@@ -2,13 +2,13 @@
 @import "../__consts.scss";
 
 .popular-section {
+    background: 
+        url("../../img/main/popular-section/popular-green.png") left -100px no-repeat,
+        url("../../img/main/popular-section/popular-pink.png") 90% 200px no-repeat,
+        url("../../img/main/popular-section/popular-main.png") right top no-repeat;
     .container {
         flex-direction: column;
         padding: 0 0 200px 0;
-        background: 
-            url("../../img/main/popular-section/popular-green.png") 10% -100px no-repeat,
-            url("../../img/main/popular-section/popular-pink.png") 80% 100px no-repeat,
-            url("../../img/main/popular-section/popular-main.png") right top no-repeat;
         h2 {
             text-align: center;
         }
@@ -71,9 +71,6 @@
                 .slider-left, .slider-right {
                     width: 40px;
                 }
-                .slider-content {
-                    max-width: 626px;
-                }
             }
         }
     }
@@ -81,12 +78,13 @@
 
 @media (max-width: 768px) {
     .popular-section {
+        background: 
+            url("../../img/main/popular-section/popular-green.png") 0 50px no-repeat,
+            url("../../img/main/popular-section/popular-pink.png") 80% 220px no-repeat;
         .container {
             flex-direction: column;
             padding: 0 0 200px 0;
-            background: 
-                url("../../img/main/popular-section/popular-green.png") 0 50px no-repeat,
-                url("../../img/main/popular-section/popular-pink.png") 80% 220px no-repeat;
+
             p {
                 font-size: 14px;
             }
@@ -99,11 +97,7 @@
                 .slider-content {
                     max-width: 275px;
                     margin: 0 15px;
-                    .slider-track {
-                        .slider-item {
-                            margin: 3px auto;
-                        }
-                    }
+
                 }
             }
             a {
