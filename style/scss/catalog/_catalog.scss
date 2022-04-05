@@ -1,0 +1,191 @@
+@import "../__mixins.scss";
+@import "../__consts.scss";
+
+.catalog {
+    background: 
+        url("../../img/catalog/flwrs-1.png") left top no-repeat,
+        url("../../img/catalog/pink-1.png") right top no-repeat,
+        url("../../img/catalog/pink-2.png") left 160px no-repeat,
+        url("../../img/catalog/pink-3.png") 20% 115px no-repeat,
+        url("../../img/catalog/pink-3.png") 70% 300px no-repeat,
+        url("../../img/catalog/pink-4.png") left 800px no-repeat,
+        url("../../img/catalog/pink-5.png") right bottom no-repeat,
+        url("../../img/catalog/green-1.png") left 1300px no-repeat,
+        url("../../img/catalog/green-2.png") left bottom no-repeat,
+        url("../../img/catalog/green-3.png") right bottom no-repeat;
+    .container {
+        flex-direction: column;
+        padding: 50px 15px 100px 15px;
+        .bouquets-h {
+            margin-left: 290px;
+        }
+        p {
+            margin-left: 290px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        .catalog-sections {
+            @include flex();
+            flex-wrap: wrap;
+            max-width: 1110px;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 100px;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 20px;
+            .section-item {
+                border: 0.5px solid $white-main;
+                border-radius: 40px;
+                padding: 12px 20px;
+                margin: 0 25px 20px 0;
+                a {
+                    color: $white-main;
+                    text-decoration: none;
+                }
+            }
+            .section-item:hover {
+                border: 0.5px solid $main-green;
+                background-color: $main-green;
+                cursor: pointer;
+                transition: 1s all;
+                a {
+                    color: $main-bg;
+                    transition: 1s all;
+                }
+            }
+        }
+        .mobile-filter {
+            display: none;
+        }
+        .catalog-wrapper {
+            @include flex();
+            .filter-wrapper {
+                flex-shrink: 1;
+                max-width: 220px;
+                width: 100%;
+            }
+            .products-wrapper {
+                @include flex(row, space-between);
+                flex-wrap: wrap;
+                margin-left: 50px;
+                max-width: 900px;
+                width: 100%;
+                .catalog-item {
+                    img {
+                        margin-bottom: 10px;
+                    }
+                    h4 {
+                        margin-bottom: 10px;
+                        font-weight: 400;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                    }
+                    .price {
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-bottom: 20px;
+                    }
+                    .add-to-cart-btn {
+                        max-width: 100%;
+                        padding: 20px 100px;
+                    }
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog {
+        background: 
+            url("../../img/catalog/flwrs-1.png") left top no-repeat,
+            url("../../img/catalog/pink-1.png") right top no-repeat,
+            url("../../img/catalog/pink-3.png") 20% 115px no-repeat,
+            url("../../img/catalog/pink-3.png") 70% 300px no-repeat,
+            url("../../img/catalog/pink-4.png") left 800px no-repeat,
+            url("../../img/catalog/pink-5.png") right bottom no-repeat,
+            url("../../img/catalog/green-1.png") left 1300px no-repeat,
+            url("../../img/catalog/green-2.png") left bottom no-repeat,
+            url("../../img/catalog/green-3.png") right bottom no-repeat;
+        .container {
+            .catalog-h {
+                margin: 0 auto;
+            }
+            .bouquets-h {
+                margin: 0 auto;
+            }
+            p {
+                margin: 0 auto;
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 300;
+            }
+            .catalog-sections {
+                margin-top: 25px;
+                margin-bottom: 10px;
+                padding: 10px;
+                .section-item {
+                    border: 0.5px solid $white-main;
+                    border-radius: 40px;
+                    padding: 5px 20px;
+                    margin: 0 10px 10px 0;
+                    a {
+                        font-size: 12px;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .mobile-filter {
+                @include flex(column);
+                h3 {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin: 20px auto;
+                    color: $main-green;
+                    text-transform: uppercase;
+                }
+                .active {
+                    text-decoration: underline;
+                }
+                .display-none {
+                    display: none;
+                }
+            }
+            .filter-wrapper {
+                display: none;
+            }
+            .catalog-wrapper {
+                .filter-wrapper {
+                    flex-shrink: 1;
+                    max-width: 220px;
+                    width: 100%;
+                }
+                .products-wrapper {
+                    margin: 0 auto;
+                    .catalog-item {
+                        margin: 0 auto;
+                        img {
+                            margin-bottom: 10px;
+                        }
+                        h4 {
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                        }
+                        .price {
+                            font-size: 12px;
+                        }
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

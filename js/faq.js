@@ -1,7 +1,5 @@
 "use strict";
 
-const items = document.querySelectorAll('.faq-item');
-
 const openBlock = (click) => {
     let target = click.target;
     if (target.classList.contains('faq-question') && target.nextElementSibling.classList.contains('display-none')) {
@@ -11,6 +9,8 @@ const openBlock = (click) => {
         target.nextElementSibling.classList.add('display-none');
     }
 }
+
+const items = document.querySelectorAll('.faq-item');
 
 items.forEach(elem => {
     elem.addEventListener('click', openBlock);

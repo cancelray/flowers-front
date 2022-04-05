@@ -25,3 +25,48 @@ form {
         margin: 0 10px;
     }
 }
+
+.filter-form {
+    @include flex(column);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 20px;
+    .filter-item {
+        @include flex(column);
+        margin-bottom: 20px;
+        h5 {
+            color: $main-green;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        input[type=checkbox] {
+            position: absolute;
+            opacity: 0;
+        }
+        label {
+            position: relative;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 18px;
+            text-transform: uppercase;
+            padding: 5px 0;
+        }
+        label::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 0.5px solid $white-main;
+            border-radius: 2px;
+            margin-right: 6px;
+        }
+        input[type=checkbox]:checked+label::before {
+            background: $main-green;
+            border: 0.5px solid $main-green;
+        }
+    }
+}
