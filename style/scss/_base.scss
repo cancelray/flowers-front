@@ -36,6 +36,14 @@ h2 {
     background-color: $main-bg;
 }
 
+.lock-scroll {
+    overflow: hidden;
+}
+
+.blur {
+    filter: blur(2px);
+}
+
 @media (max-width: 992px) {
 
 }

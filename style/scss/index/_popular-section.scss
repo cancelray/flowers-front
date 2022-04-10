@@ -8,7 +8,7 @@
         url("../../img/main/popular-section/popular-main.png") right top no-repeat;
     .container {
         flex-direction: column;
-        padding: 0 0 200px 0;
+        padding: 0 0 150px 0;
         h2 {
             text-align: center;
         }
@@ -33,9 +33,11 @@
                 .slider-track {
                     transition: 2s all;
                     @include flex(row, space-between);
+                    scroll-snap-type: x mandatory;
                     .slider-item {
                         margin: 0 10px;
                         flex-shrink: 0;
+                        scroll-snap-align: start;
                         img {
                             margin-bottom: 10px;
                         }
@@ -66,11 +68,18 @@
 @media (max-width: 992px) {
     .popular-section {
         .container {
-            padding: 0 0 150px 0;
+            padding: 0 0 100px 0;
             .slider-wrapper {
+                max-width: 640px;
                 .slider-left, .slider-right {
                     width: 40px;
                 }
+                .slider-content {
+                    max-width: 550px;
+                }
+            }
+            a {
+                margin: 0 auto;
             }
         }
     }
@@ -83,25 +92,54 @@
             url("../../img/main/popular-section/popular-pink.png") 80% 220px no-repeat;
         .container {
             flex-direction: column;
-            padding: 0 0 200px 0;
-
+            padding: 0 10px 50px 10px;
             p {
                 font-size: 14px;
             }
             .slider-wrapper {
                 margin: 70px auto;
-                max-width: 300px;
                 .slider-left, .slider-right {
-                    width: 23px;
+                    display: none;
+                }
+                .slider-track {
+                    padding-bottom: 30px;
+                    overflow-x: auto;
+                }
+                ::-webkit-scrollbar {
+                    height: 10px;
+                    width: 6px;
+                    border: 1px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    opacity: 0.5;
+                }
+                ::-webkit-scrollbar-thumb {
+                    // background: rgb(125, 34, 83, 0.8);
+                    background: rgba(67, 255, 210, 0.5);
+                    -webkit-border-radius: 1ex;
+                    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+                }
+                 
+                ::-webkit-scrollbar-corner {
+                    background: #fff;
                 }
                 .slider-content {
-                    max-width: 275px;
-                    margin: 0 15px;
+                    margin: 0 auto;
 
                 }
             }
-            a {
-                margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .popular-section {
+        .container {
+            .slider-wrapper {
+                max-width: 300px;
+                .slider-content {
+                    max-width: 275px;
+                    margin: 0 15px;
+                }
             }
         }
     }
