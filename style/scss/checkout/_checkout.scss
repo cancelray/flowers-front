@@ -1,0 +1,188 @@
+@import "../__consts.scss";
+@import "../__mixins.scss";
+
+.checkout {
+    background: 
+        url("../../img/checkout/flwrs-1.png") left top no-repeat,
+        url("../../img/checkout/flwrs-2.png") right top no-repeat,
+        url("../../img/checkout/pink-1.png") right top no-repeat,
+        url("../../img/checkout/green-1.png") right 750px no-repeat,
+        url("../../img/checkout/pink-2.png") right 1000px no-repeat,
+        url("../../img/checkout/green-2.png") left bottom no-repeat;
+    .container {
+        flex-direction: column;
+        padding: 50px 15px 150px 15px;
+        .order {
+            margin-left: 100px;
+        }
+        .checkout-wrapper {
+            width: 100%;
+            @include flex(row, space-between);
+            padding-top: 100px;
+            h3 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                color: $main-green;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            .checkout-form {
+                max-width: 540px;
+                width: 100%;
+                input {
+                    margin-top: 5px;
+                }
+                .form-head-delivery {
+                    margin: 20px 0;
+                }
+                .courier-delivery-checkout {
+                    margin-top: 20px;
+                    @include flex(column);
+                    .small-inputs {
+                        @include flex(row);
+                        flex-wrap: wrap;
+                        .small-item {
+                            @include flex(column);
+                            margin-right: 30px;
+                            .input {
+                                width: 160px;
+                            }
+                        }
+                    }
+                }
+                .display-none {
+                    display: none;
+                }
+                .payment-form {
+                    @include flex(column);
+                    margin: 30px 0;
+                }
+                .delivery-price {
+                    font-size: 14px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                }
+                .total-price {
+                    margin: 20px 0;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 44px;
+                    color: $main-green;
+                    text-transform: uppercase;
+                }
+                button {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-bottom: 20px;
+                }
+                .confidentiality-terms {
+                    font-size: 10px;
+                    line-height: 12px;
+                    max-width: 330px;
+                    width: 100%;
+                    .terms-link {
+                        color: $hover;
+                        text-decoration: underline;
+                    }
+                    .terms-link:hover {
+                        color: $main-green;
+                    }
+                }
+            }
+            .order-information {
+                .order-contents {
+                    @include flex(column);
+                    flex: 1 1 auto;
+                    .order-item {
+                        margin: 20px 0;
+                        @include flex(row);
+                        width: 100%;
+                        padding-bottom: 10px;
+                        border-bottom: 0.5px solid $white-main;
+                        img {
+                            max-width: 60px;
+                            max-height: 80px;
+                            margin-right: 30px;
+                        }
+                        .order-info {
+                            @include flex(column);
+                            .name-price {
+                                @include flex();
+                                margin-bottom: 25px;
+                                p  {
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 21px;
+                                    text-transform: uppercase;
+                                }
+                                .in-order-name {
+                                    margin-right: 50px;
+                                }
+                                .in-order-price {
+                                    color: $main-green;
+                                }
+                            }
+                            .amount-delete {
+                                @include flex(row, space-between);
+                                .in-order-amount {
+                                    @include flex(row, space-between, center);
+                                    max-width: 100px;
+                                    width: 100%;
+                                    padding: 5px 15px;
+                                    border: 0.5px solid $white-main;
+                                    border-radius: 10px;
+                                    .decrement, .increment {
+                                        cursor: pointer;
+                                    }
+                                }
+                                .delete-from-order {
+                                    cursor: pointer;
+                                }
+                                .delete-from-order:hover {
+                                    color: $hover;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .checkout {
+        background: 
+            url("../../img/checkout/flwrs-1.png") left top no-repeat,
+            url("../../img/checkout/pink-1.png") right top no-repeat,
+            url("../../img/checkout/green-1.png") right 750px no-repeat,
+            url("../../img/checkout/pink-2.png") right 1000px no-repeat,
+            url("../../img/checkout/green-2.png") left bottom no-repeat;
+        .container {
+            .registration {
+                margin: 0 auto;
+            }
+            .order {
+                margin: 0 auto;
+            }
+            .mobile-display-none {
+                display: none;
+            }
+            .checkout-form {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout {
+        background: 
+            url("../../img/checkout/flwrs-1.png") left top no-repeat,
+            url("../../img/checkout/pink-1.png") right top no-repeat,
+            url("../../img/checkout/green-1.png") right 750px no-repeat,
+            url("../../img/checkout/green-2.png") left bottom no-repeat;
+    }
+}
