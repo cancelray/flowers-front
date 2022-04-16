@@ -21,6 +21,17 @@
         .logo-footer {
             max-width: 450px;
             width: 100%;
+            .logo-footer-link {
+                font-family: "Cormorant", sans-serif;
+                display: flex;
+                align-items: center;
+                color: $white-main;
+                margin-bottom: 20px;
+                img {
+                    width: 40px;
+                    margin-right: 5px;
+                }
+            }
         }
         .menu-footer {
             @include flex(column);
@@ -39,6 +50,14 @@
                 color: $white-main;
                 font-size: 12px;
                 line-height: 15px;
+            }
+            .socials-footer {
+                max-width: 100px;
+                width: 100%;
+                @include flex(row, space-between);
+                img {
+                    width: 30px;
+                }
             }
         }
     }
@@ -64,6 +83,7 @@
         .container {
             flex-direction: column;
             .logo-footer {
+                text-align: center;
                 margin: 10px auto;
                 @include flex(column, space-between, center);
             }
@@ -72,6 +92,7 @@
                 margin: 10px auto;
             }
             .info-footer {
+                text-align: center;
                 margin: 10px auto;
             }
         }

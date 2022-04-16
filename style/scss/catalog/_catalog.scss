@@ -75,20 +75,28 @@
                 max-width: 900px;
                 width: 100%;
                 .catalog-item {
-                    img {
-                        margin-bottom: 10px;
+                    a {
+                        img {
+                            margin-bottom: 10px;
+                        }
+                        h4 {
+                            margin-bottom: 10px;
+                            font-weight: 400;
+                            font-size: 20px;
+                            color: $white-main;
+                            text-transform: uppercase;
+                        }
+                        .price {
+                            font-weight: 700;
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin-bottom: 20px;
+                        }
                     }
-                    h4 {
-                        margin-bottom: 10px;
-                        font-weight: 400;
-                        font-size: 20px;
-                        text-transform: uppercase;
-                    }
-                    .price {
-                        font-weight: 700;
-                        font-size: 14px;
-                        line-height: 21px;
-                        margin-bottom: 20px;
+                    a:hover {
+                        h4 {
+                            color: $hover;
+                        }
                     }
                     .add-to-cart-btn {
                         max-width: 100%;

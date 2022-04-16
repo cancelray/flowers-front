@@ -14,7 +14,7 @@
     align-items: center;
     z-index: 1070;
     .container {
-        max-width: 1110px;
+        max-width: 1440px;
         justify-content: space-between;
         align-items: center;
         color: $white-main; 
@@ -28,10 +28,34 @@
             color: $hover;
             transition: 0.6s all;
         }
+        .logo-header {
+            cursor: pointer;
+            a {
+                font-family: "Cormorant", sans-serif;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 40px;
+                    margin-right: 5px;
+                }
+            }
+            a:hover {
+                color: $white-main;
+            }
+        }
         .navigation {
-            max-width: 600px;
+            max-width: 400px;
             width: 100%;
             @include flex(row, space-between);
+        }
+        .socials-header {
+            max-width: 50px;
+            width: 100%;
+            @include flex(row, space-between);
+            img {
+                width: 20px;
+            }
         }
         .email-header {
             @include flex(column);
@@ -41,6 +65,11 @@
         }
         .cart-icon {
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            img {
+                width: 40px;
+            }
         }
     }
     .cart-wrapper {
@@ -169,7 +198,7 @@
             font-size: 12px;
             line-height: 18px;
             .navigation {
-                max-width: 300px;
+                max-width: 250px;
             }
         }
         .cart-wrapper {
@@ -253,6 +282,15 @@
                         .burger-email, .burger-adress, .burger-phone {
                             @include flex(column);
                             padding: 20px 0;
+                        }
+                        .burger-socials {
+                            margin: 0 auto;
+                            max-width: 100px;
+                            width: 100%;
+                            @include flex(row, space-between);
+                            img {
+                                width: 30px;
+                            }
                         }
                     }
                 }

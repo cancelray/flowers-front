@@ -3,20 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+	<link rel="icon" type="image/x-icon" href="img/flower-bouquet.png"/>
 	<title>tmplt</title>
 	<meta name="description" content="template">
 	<link href="style/css/index.min.css" rel="stylesheet" type="text/css">
+	<script defer src="js/index.js"></script>
 	<script defer src="js/slider.js"></script>
-	<script defer src="js/burger.js"></script>
-	<script defer src="js/cart-show.js"></script>
 </head>
 
 <body>
 	<div class="page-wrapper">
 		<header class="header">
 			<div class="container desc-header">
-				<div class="logo-header"><a href="/">logo</a></div>
+				<div class="logo-header"><a href="/"><img src="img/header/logo.png" alt="logo">Our Flowers</a></div>
 				<nav class="navigation">
 					<a href="">Каталог</a>
 					<a href="">Доставка и оплата</a>
@@ -27,7 +26,11 @@
 					<a href="mailto:zakaz@myflowers.ru">zakaz@myflowers.ru</a>
 					<span>Доставка 24/7 по договоренности с оператором</span>
 				</div>
-				<div class="cart-icon">cart</div>
+				<div class="socials-header">
+					<a href="https://wa.me/8xxxxxxxxxx"><img src="img/header/socials/whatsapp.png" alt="whatsapp" target="_blank"></a>
+					<a href="https://vk.com/_our_flowers"><img src="img/header/socials/vk.png" alt="vk" target="_blank"></a>
+				</div>
+				<div class="cart-icon"><img src="img/header/cart.png" alt="cart">(3)</div>
 			</div>
 			<div class="container mobile-header">
 				<div class="mobile-menu">
@@ -35,8 +38,8 @@
 					<div class="menu-item"></div>
 					<div class="menu-item"></div>
 				</div>
-				<div class="logo-header"><a href="/">logo</a></div>
-				<div class="cart-icon">cart</div>
+				<div class="logo-header"><a href="/"><img src="img/header/logo.png" alt="logo">Our Flowers</a></div>
+				<div class="cart-icon"><img src="img/header/cart.png" alt="cart">(3)</div>
 				<div class="mobile-menu-burger hide">
 					<div class="burger-wrapper">
 						<div class="burger-links">
@@ -61,6 +64,10 @@
 							<div class="burger-phone">
 								<a href="tel:+79202777555">+7(920)277-75-55</a>
 								<span class="add-info">прием звонков круглосуточно</span>
+							</div>
+							<div class="burger-socials">
+								<a href="https://wa.me/8xxxxxxxxxx"><img src="img/header/socials/whatsapp.png" alt="whatsapp" target="_blank"></a>
+								<a href="https://vk.com/_our_flowers"><img src="img/header/socials/vk.png" alt="vk" target="_blank"></a>
 							</div>
 						</div>
 					</div>
@@ -202,33 +209,43 @@
 						<div class="slider-content">
 							<div class="slider-track">
 								<div class="slider-item">
-									<img src="img/main/popular-section/slider/1.png" alt="1" class="slider-img">
-									<h4>name 1</h4>
-									<p>111.00 &#8381</p>
+									<a href="">
+										<img src="img/main/popular-section/slider/1.png" alt="1" class="slider-img">
+										<h4>name 1</h4>
+										<p>111.00 &#8381</p>
+									</a>
 									<div class="add-to-cart-btn">в корзину</div>
 								</div>
 								<div class="slider-item">
-									<img src="img/main/popular-section/slider/2.png" alt="2" class="slider-img">
-									<h4>name 2</h4>
-									<p>90.00 &#8381</p>
+									<a href="">
+										<img src="img/main/popular-section/slider/2.png" alt="2" class="slider-img">
+										<h4>name 2</h4>
+										<p>90.00 &#8381</p>
+									</a>
 									<div class="add-to-cart-btn">в корзину</div>
 								</div>
 								<div class="slider-item">
-									<img src="img/main/popular-section/slider/3.png" alt="3" class="slider-img">
-									<h4>name 3</h4>
-									<p>222.00 &#8381</p>
+									<a href="">
+										<img src="img/main/popular-section/slider/3.png" alt="3" class="slider-img">
+										<h4>name 3</h4>
+										<p>222.00 &#8381</p>
+									</a>
 									<div class="add-to-cart-btn">в корзину</div>
 								</div>
 								<div class="slider-item">
-									<img src="img/main/popular-section/slider/4.png" alt="4" class="slider-img">
-									<h4>name 4</h4>
-									<p>2252.00 &#8381</p>
+									<a href="">
+										<img src="img/main/popular-section/slider/4.png" alt="4" class="slider-img">
+										<h4>name 4</h4>
+										<p>2252.00 &#8381</p>
+									</a>
 									<div class="add-to-cart-btn">в корзину</div>
 								</div>
 								<div class="slider-item">
-									<img src="img/main/popular-section/slider/5.png" alt="5" class="slider-img">
-									<h4>name 5</h4>
-									<p>984.00 &#8381</p>
+									<a href="">
+										<img src="img/main/popular-section/slider/5.png" alt="5" class="slider-img">
+										<h4>name 5</h4>
+										<p>984.00 &#8381</p>
+									</a>
 									<div class="add-to-cart-btn">в корзину</div>
 								</div>
 							</div>
@@ -309,7 +326,7 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="logo-footer">
-					<a href="/">logo</a>
+					<a href="/" class="logo-footer-link"><img src="img/header/logo.png" alt="logo">Our Flowers</a>
 					<div class="requisites">
 						<h5>Реквизиты</h5>
 						<p>
@@ -338,6 +355,10 @@
 					<div class="phone-footer">
 						<a href="tel:+79202777555">+7(920)277-75-55</a>
 						<span class="add-info">прием звонков круглосуточно</span>
+					</div>
+					<div class="socials-footer">
+						<a href="https://wa.me/8xxxxxxxxxx"><img src="img/header/socials/whatsapp.png" alt="whatsapp" target="_blank"></a>
+						<a href="https://vk.com/_our_flowers"><img src="img/header/socials/vk.png" alt="vk" target="_blank"></a>
 					</div>
 				</div>
 			</div>
